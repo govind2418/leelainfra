@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Design tokens — Leela Infra Solution dark luxury theme            */
+/* ------------------------------------------------------------------ */
+:root {
+  --ink: #08070a;
+  --ink-1: #0d0c0f;
+  --ink-2: #141215;
+  --ink-3: #1c191b;
+  --line: rgba(243, 237, 226, 0.09);
+  --line-strong: rgba(243, 237, 226, 0.16);
+
+  --cream: #f4efe3;
+  --cream-dim: #a79f92;
+  --cream-faint: #6f6a62;
+
+  --gold-50: #fbf3de;
+  --gold-200: #ecd8a3;
+  --gold-400: #d3ab5f;
+  --gold-500: #c39a4c;
+  --gold-600: #a37f3b;
+  --gold-900: #4a3a1a;
+
+  --emerald: #2f3d34;
+
+  --radius-lg: 1.75rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-1: var(--ink-1);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-cream: var(--cream);
+  --color-cream-dim: var(--cream-dim);
+  --color-cream-faint: var(--cream-faint);
+
+  --color-gold-50: var(--gold-50);
+  --color-gold-200: var(--gold-200);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-900: var(--gold-900);
+
+  --font-display: var(--font-playfair);
+  --font-accent: var(--font-cormorant);
+  --font-sans: var(--font-manrope);
+
+  --animate-marquee: marquee 34s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 34s linear infinite;
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-spin-slow: spin 14s linear infinite;
+
+  --breakpoint-xs: 420px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+html {
+  background: var(--ink);
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--gold-500);
+  color: var(--ink);
+}
+
+* {
+  border-color: var(--line);
+}
+
+/* thin gold-tinted scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--gold-600), var(--gold-900));
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+}
+html { scrollbar-color: var(--gold-600) var(--ink); scrollbar-width: thin; }
+
+/* ------------------------------------------------------------------ */
+/*  Reusable design utilities                                         */
+/* ------------------------------------------------------------------ */
+@utility text-gradient-gold {
+  background: linear-gradient(100deg, var(--gold-200) 0%, var(--gold-500) 45%, var(--gold-600) 65%, var(--gold-200) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glass-panel {
+  background: linear-gradient(160deg, rgba(244, 239, 227, 0.06), rgba(244, 239, 227, 0.015));
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 0 0 rgba(244,239,227,0.05) inset, 0 20px 60px -20px rgba(0,0,0,0.6);
+}
+
+@utility glass-panel-strong {
+  background: linear-gradient(160deg, rgba(244, 239, 227, 0.09), rgba(244, 239, 227, 0.03));
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid var(--line-strong);
+}
+
+@utility grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+@utility container-luxe {
+  width: 100%;
+  max-width: 88rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-luxe { padding-inline: 2.5rem; }
+}
+@media (min-width: 1280px) {
+  .container-luxe { padding-inline: 4rem; }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+
+@utility hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Reveal helper (JS toggles data-visible) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+[data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
