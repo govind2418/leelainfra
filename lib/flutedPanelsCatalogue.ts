@@ -1,0 +1,27 @@
+export type CatalogueSlide = { src: string; title: string };
+
+export const FLUTED_PANELS_CATALOGUE: CatalogueSlide[] = [
+  { src: "/images/fluted-panels-catalogue/design-01.jpg", title: "Fluted Panels by Leela Infra Solution" },
+  { src: "/images/fluted-panels-catalogue/design-02.jpg", title: "Who We Are" },
+  { src: "/images/fluted-panels-catalogue/design-03.jpg", title: "Fluted Panels Collection" },
+  { src: "/images/fluted-panels-catalogue/design-04.jpg", title: "Bianca" },
+  { src: "/images/fluted-panels-catalogue/design-05.jpg", title: "Cove" },
+  { src: "/images/fluted-panels-catalogue/design-06.jpg", title: "High Quality Natural Wood Finishes" },
+  { src: "/images/fluted-panels-catalogue/design-07.jpg", title: "Edison" },
+  { src: "/images/fluted-panels-catalogue/design-08.jpg", title: "Zion" },
+  { src: "/images/fluted-panels-catalogue/design-09.jpg", title: "Luxury Ceiling" },
+  { src: "/images/fluted-panels-catalogue/design-10.jpg", title: "Easton" },
+  { src: "/images/fluted-panels-catalogue/design-11.jpg", title: "Cooper" },
+  { src: "/images/fluted-panels-catalogue/design-12.jpg", title: "Modern Design" },
+  { src: "/images/fluted-panels-catalogue/design-13.jpg", title: "Delta" },
+  { src: "/images/fluted-panels-catalogue/design-14.jpg", title: "Oxford" },
+  { src: "/images/fluted-panels-catalogue/design-15.jpg", title: "Sorrento" },
+  { src: "/images/fluted-panels-catalogue/design-16.jpg", title: "Luxury Wardrobe" },
+  { src: "/images/fluted-panels-catalogue/design-17.jpg", title: "Chevron" },
+  { src: "/images/fluted-panels-catalogue/design-18.jpg", title: "Oakley" },
+  { src: "/images/fluted-panels-catalogue/design-19.jpg", title: "Brentley" },
+  { src: "/images/fluted-panels-catalogue/design-20.jpg", title: "Sacha" },
+  { src: "/images/fluted-panels-catalogue/design-21.jpg", title: "Sublime" },
+  { src: "/images/fluted-panels-catalogue/design-22.jpg", title: "Timeless Collection" },
+  { src: "/images/fluted-panels-catalogue/design-23.jpg", title: "Fluted Wooden Collection — All Designs" },
+];

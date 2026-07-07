@@ -7,6 +7,7 @@ import { ProductFeatures } from "@/sections/products/ProductFeatures";
 import { TeakVeneerSeries } from "@/sections/products/TeakVeneerSeries";
 import { VeneerTypesTabs } from "@/sections/products/VeneerTypesTabs";
 import { AGTFlooringShowcase } from "@/sections/products/AGTFlooringShowcase";
+import { FlutedPanelsCatalogue } from "@/sections/products/FlutedPanelsCatalogue";
 import { RelatedProducts } from "@/sections/products/RelatedProducts";
 import { CTASection } from "@/sections/shared/CTASection";
 
@@ -46,6 +47,7 @@ export default async function ProductDetailPage({
       <ProductFeatures product={product} />
       {product.slug === "veneers" && <TeakVeneerSeries />}
       {product.slug === "wooden-flooring" && <AGTFlooringShowcase />}
+      {product.slug === "fluted-panels" && <FlutedPanelsCatalogue />}
       <RelatedProducts currentSlug={product.slug} />
       <CTASection
         title={`Ready to specify ${product.name.toLowerCase()}?`}
