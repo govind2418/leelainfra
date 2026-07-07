@@ -7,7 +7,7 @@ import { CTASection } from "@/sections/shared/CTASection";
 export const metadata: Metadata = buildMetadata({
   title: "Products",
   description:
-    "Explore our seven premium product categories — wooden flooring, wall panels, fluted panels, veneers, laminates, hardware and bath fittings.",
+    "Shop premium wooden flooring, wall panels, fluted panels, veneers, laminates, hardware and bath fittings in Mumbai — seven categories, sampled and specified for Indian conditions.",
   path: "/products",
 });
 

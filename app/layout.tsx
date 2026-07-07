@@ -34,8 +34,16 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  ...buildMetadata({ title: `${SITE.name} — ${SITE.tagline}`, path: "/" }),
+  ...buildMetadata({
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description:
+      "Leela Infra Solution — Mumbai's trusted name for premium wooden flooring, veneers, wall & fluted panels, laminates, hardware and bath fittings. Serving architects, designers and homeowners across Mumbai, Thane and Navi Mumbai.",
+    path: "/",
+  }),
   metadataBase: new URL(SITE.url),
+  verification: {
+    google: "uNVMA4i_kPKiM20RDUHSKUwqIKBKdfjPmLERkoZzKC0",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

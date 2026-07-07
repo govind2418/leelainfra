@@ -21,7 +21,7 @@ export const PRODUCTS: Product[] = [
     name: "Wooden Flooring",
     short: "Engineered & solid timber floors with a couture finish.",
     description:
-      "Engineered and solid timber flooring milled for dimensional stability and finished to a couture standard — warm underfoot, resilient to Indian humidity, and available pre-finished or site-polished to match any interior palette.",
+      "Engineered and solid timber flooring milled for dimensional stability and finished to a couture standard — warm underfoot, resilient to Mumbai's humidity, and available pre-finished or site-polished to match any interior palette. Trusted wooden flooring in Mumbai for homes and studios alike.",
     art: "wood",
     image: WORK_IMAGES.manhattanPlanks,
     highlights: [
@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
     name: "Wall Panels",
     short: "Sculptural surfaces that turn a wall into architecture.",
     description:
-      "Modular wall panelling engineered for fast, dust-free installation — from upholstered acoustic panels to stone-veneered slabs — giving every wall the depth and tactility of bespoke joinery.",
+      "Modular wall panels for Mumbai homes and offices, engineered for fast, dust-free installation — from upholstered acoustic panels to stone-veneered slabs — giving every wall the depth and tactility of bespoke joinery.",
     art: "panel",
     image: WORK_IMAGES.texturedPanel,
     video: "/videos/wall-panels-hero.mp4",
@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
     name: "Fluted Panels",
     short: "Rhythmic grooves that sculpt light across every wall.",
     description:
-      "Precision-milled fluted panels that carve continuous vertical rhythm into walls, islands and wardrobe shutters — a signature of the modern luxury interior, engineered for razor-sharp groove consistency.",
+      "Precision-milled fluted panels in Mumbai that carve continuous vertical rhythm into walls, islands and wardrobe shutters — a signature of the modern luxury interior, engineered for razor-sharp groove consistency.",
     art: "fluted",
     image: WORK_IMAGES.staircaseFluted,
     highlights: [
@@ -88,7 +88,7 @@ export const PRODUCTS: Product[] = [
     name: "Veneers",
     short: "Natural wood grain, engineered for architectural scale.",
     description:
-      "Rare-cut natural and reconstituted veneers that bring authentic wood grain to doors, panelling and furniture at architectural scale — book-matched and balanced for a seamless, gallery-grade finish.",
+      "Rare-cut natural and reconstituted veneers, supplied across Mumbai, that bring authentic wood grain to doors, panelling and furniture at architectural scale — book-matched and balanced for a seamless, gallery-grade finish.",
     art: "veneer",
     image: WORK_IMAGES.veneerBurl,
     highlights: [

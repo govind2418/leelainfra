@@ -82,7 +82,7 @@ export function Hero() {
               className="eyebrow mb-7 inline-flex items-center gap-3"
             >
               <span className="h-px w-8 bg-gold-500/60" />
-              Luxury Interiors and Architectural Excellence
+              Luxury Interiors & Architectural Excellence in Mumbai
             </motion.span>
 
             <h1 className="font-display text-[13vw] leading-[0.95] font-medium text-cream sm:text-[9vw] lg:text-[6vw] xl:text-[5.4rem]">
@@ -111,7 +111,8 @@ export function Hero() {
               className="mt-8 max-w-md text-base leading-relaxed text-cream-dim sm:text-lg"
             >
               Discover the pinnacle of interior design with our premium materials and exquisite
-              finishes — tailored for modern living, from wooden flooring to bath fittings.
+              finishes — wooden flooring, veneers, wall & fluted panels and bath fittings, delivered
+              across Mumbai for modern living.
             </motion.p>
 
             <motion.div
