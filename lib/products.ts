@@ -68,7 +68,7 @@ export const PRODUCTS: Product[] = [
     description:
       "Precision-milled fluted panels in Mumbai that carve continuous vertical rhythm into walls, islands and wardrobe shutters — a signature of the modern luxury interior, engineered for razor-sharp groove consistency.",
     art: "fluted",
-    image: WORK_IMAGES.staircaseFluted,
+    image: WORK_IMAGES.solidWoodFlutedPanels,
     highlights: [
       "Consistent 10–30 mm groove profiles",
       "PU / laminate / veneer face options",

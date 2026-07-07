@@ -20,6 +20,7 @@ export const WORK_IMAGES = {
   bathSoapDish: "/images/work/bath-soap-dish.jpg",
   bathRainShower: "/images/work/bath-rain-shower.jpg",
   merinoLaminateCover: "/images/work/merino-laminate-cover.jpg",
+  solidWoodFlutedPanels: "/images/work/solid-wood-fluted-panels.jpg",
 } as const;
 
 export const FOUNDER_IMAGE = "/images/team/founder.png";
