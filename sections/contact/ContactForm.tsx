@@ -15,11 +15,10 @@ export function ContactForm() {
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Enquiry: ${form.interest}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nInterested in: ${form.interest}\n\n${form.message}`
+    const text = encodeURIComponent(
+      `Enquiry: ${form.interest}\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\n\n${form.message}`
     );
-    window.location.href = `mailto:${CONTACT.email}?subject=${subject}&body=${body}`;
+    window.open(`${CONTACT.whatsapp}?text=${text}`, "_blank", "noopener,noreferrer");
     setSent(true);
   }
 
@@ -32,10 +31,13 @@ export function ContactForm() {
           className="flex flex-col items-center py-10 text-center"
         >
           <CheckCircle2 className="mb-4 text-gold-400" size={40} />
-          <h3 className="font-display text-2xl text-cream">Your email client is opening…</h3>
+          <h3 className="font-display text-2xl text-cream">Opening WhatsApp…</h3>
           <p className="mt-2 max-w-sm text-sm text-cream-dim">
-            If nothing happened, write to us directly at{" "}
-            <a href={`mailto:${CONTACT.email}`} className="text-gold-300 underline">{CONTACT.email}</a>.
+            Just hit send in WhatsApp to reach us. If nothing opened, message us directly at{" "}
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" className="text-gold-300 underline">
+              {CONTACT.phoneDisplay}
+            </a>
+            .
           </p>
           <button onClick={() => setSent(false)} className="mt-6 text-xs tracking-wide text-cream-dim underline hover:text-gold-300">
             Send another enquiry
