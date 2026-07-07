@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { ArrowUpRight, BookOpen, Star } from "lucide-react";
+import { TouchHereArrow } from "@/components/ui/TouchHereArrow";
 import { ButtonLink } from "@/components/ui/Button";
 import { Magnetic } from "@/components/ui/Magnetic";
 import Image from "next/image";
@@ -121,11 +122,15 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="mt-10 flex flex-wrap items-center gap-4"
             >
-              <Magnetic>
-                <ButtonLink href="/catalogue">
-                  <BookOpen size={16} /> View E-Catalogue
-                </ButtonLink>
-              </Magnetic>
+              <div className="relative">
+                <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-gold-500/40 [animation-duration:2s]" />
+                <Magnetic>
+                  <ButtonLink href="/catalogue">
+                    <BookOpen size={16} /> View E-Catalogue
+                  </ButtonLink>
+                </Magnetic>
+                <TouchHereArrow className="-top-14 -right-10 hidden sm:block" />
+              </div>
               <ButtonLink href="/products" variant="ghost">
                 Explore Products <ArrowUpRight size={16} />
               </ButtonLink>
