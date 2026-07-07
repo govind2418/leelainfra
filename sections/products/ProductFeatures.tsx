@@ -52,7 +52,7 @@ export function ProductFeatures({ product }: { product: Product }) {
         </motion.div>
       </div>
 
-      {product.slug !== "veneers" && product.slug !== "wooden-flooring" && (
+      {product.slug !== "veneers" && product.slug !== "wooden-flooring" && product.slug !== "fluted-panels" && (
         <div className="mt-16">
           <p className="eyebrow mb-6">Available Finishes</p>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
