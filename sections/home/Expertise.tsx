@@ -7,6 +7,9 @@ import { MediaFrame } from "@/components/ui/MediaFrame";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PRODUCTS } from "@/lib/products";
 
+const HOME_ORDER = ["veneers", "wall-panels", "fluted-panels", "wooden-flooring", "laminates", "hardware", "bath-fittings"];
+const HOME_PRODUCTS = HOME_ORDER.map((slug) => PRODUCTS.find((p) => p.slug === slug)!).filter(Boolean);
+
 const SPANS = [
   "lg:col-span-4 lg:row-span-2",
   "lg:col-span-2",
@@ -28,7 +31,7 @@ export function Expertise() {
       />
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6">
-        {PRODUCTS.map((product, i) => (
+        {HOME_PRODUCTS.map((product, i) => (
           <motion.div
             key={product.slug}
             initial={{ opacity: 0, y: 24 }}

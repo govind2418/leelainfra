@@ -21,6 +21,7 @@ export const WORK_IMAGES = {
   bathRainShower: "/images/work/bath-rain-shower.jpg",
   merinoLaminateCover: "/images/work/merino-laminate-cover.jpg",
   solidWoodFlutedPanels: "/images/work/solid-wood-fluted-panels.jpg",
+  wallPanelsCoverNew: "/images/work/wall-panels-cover-new.jpg",
 } as const;
 
 export const FOUNDER_IMAGE = "/images/team/founder.png";

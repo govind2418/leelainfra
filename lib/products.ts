@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     description:
       "Modular wall panels for Mumbai homes and offices, engineered for fast, dust-free installation — from upholstered acoustic panels to stone-veneered slabs — giving every wall the depth and tactility of bespoke joinery.",
     art: "panel",
-    image: WORK_IMAGES.texturedPanel,
+    image: WORK_IMAGES.wallPanelsCoverNew,
     video: "/videos/wall-panels-hero.mp4",
     highlights: [
       "Tool-free click & clip installation system",
